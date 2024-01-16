@@ -319,7 +319,7 @@ header {
 .footer {
     background: linear-gradient(to left, var(--primary-solid), var(--secondary-solid));
     padding: var(--spacing-8) 0;
-    font-size: var(--font-medium);
+    font-size: var(--font-small);
     font-family: var(--alternative-font);
     /* position: absolute;
     bottom: 0;
@@ -329,24 +329,20 @@ header {
 
 .footer-row {
     display: flex;
-    flex-wrap: wrap;
-
 }
 
 .footer-links {
-    width: 50%;
+    width: 60%;
     padding: .9375rem;
     display: flex;
     flex-direction: column;
-
 }
 
 .footer-links h4 {
-    /* font-size: 1.25rem; */
+    /* font-size: 1.125rem; */
     color: black;
     margin-bottom: 1.5625rem;
-    font-weight: 500;
-    border-bottom: .125rem solid var(--primary-solid);
+    font-weight: 550;
     padding-bottom: .625rem;
     display: inline-block;
     
@@ -364,14 +360,15 @@ header {
 .footer-links ul a:hover {
     color: black;
     padding-left: .375rem;
+    
 }
 
-.social-link {
+.social-links {
     list-style: none;
     display: flex;
 }
  
-.social-link li {
+.social-links li {
     display: inline-block;
     margin: 0.30em;
     position: relative;
@@ -380,34 +377,34 @@ header {
 
 }
 
-.social-link i{
+.social-links i{
     color: #000000;
     position: relative;
     top: 1.3125rem;
     transition: all 265ms ease-in-out;
 }
 
-.social-link a {
+.social-links a {
     display: inline-block;
 }
 
-.social-link a::before{
+.social-links a::before{
     transform: scale(1);
     content:'';
-    width: 1.25rem;
-    border-radius: 6.25rem;
+    width: 1rem;
+    border-radius: 5rem;
     display: block;
     background: linear-gradient(45deg, white);
     transition: all 265ms ease-out;
 }
 
-.social-link a:hover::before {
+.social-links a:hover::before {
     transform: scale(0);
     transition: all 265ms ease-in;
 }
 
-.social-link a:hover i {
-    transform: scale(2.2);
+.social-links a:hover i {
+    transform: scale(2);
     color: white;
     background: linear-gradient(45deg, white);
     background-clip: text;
